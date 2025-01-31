@@ -8,11 +8,10 @@ import img4 from '../assets/home-images/4.jpg';
 import img5 from '../assets/home-images/5.jpg';
 import img6 from '../assets/home-images/6.jpg';
 import img7 from '../assets/home-images/7.jpg';
-import img8 from '../assets/home-images/8.jpg';
 
 
 export default function Home(){
-    const images = [img1, img2, img3, img4, img5, img6, img7, img8];
+    const images = [img1, img2, img3, img4, img5, img6, img7];
     
     return (
         <div>
