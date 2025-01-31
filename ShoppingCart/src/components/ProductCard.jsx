@@ -4,8 +4,10 @@ import '../CSS/product-card.css';
 export default function ProductCard({ image, title, description, price, rating }) {
     return (
             <div className="products-container">
-                <div className="product-image-container">
-                    <img src={image} alt={title} className="product-images" />
+                <div className="images-container">
+                    <div className="product-image-container">
+                        <img src={image} alt={title} className="product-images" />
+                    </div>
                 </div>
                 <h3 className="product-title">{title}</h3>
                 <p className="product-description">{description.slice(0, 100)}...</p>

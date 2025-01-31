@@ -17,14 +17,18 @@
     height: 25rem;
 }
 
-/* Image container */
-.product-image-container {
-    width: 150px;  
-    height: 250px;
+.images-container{
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+/* Image container */
+.product-image-container {
+    width: 150px;  
+    height: 250px;
+
 }
 
 .product-image-container img {
