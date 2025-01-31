@@ -1,4 +1,5 @@
 import '../CSS/carousel.css'
+import PropTypes from 'prop-types';
 
 const Carousel = ({ images }) => {
     return (
@@ -11,5 +12,9 @@ const Carousel = ({ images }) => {
       </div>
     );
   };
-  
-  export default Carousel;
+
+Carousel.propTypes = {
+    images: PropTypes.array.isRequired,
+} 
+
+export default Carousel;
