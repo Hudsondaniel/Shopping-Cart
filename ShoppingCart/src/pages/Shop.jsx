@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 import { useEffect, useState } from "react";
+import '../CSS/shop.css';
 
 
 export default function Shop(){
@@ -19,9 +20,8 @@ export default function Shop(){
     return (
         <>
             <Navbar />
-            <div className="shop-container">
+            <div className="products-outside-container">
                 {products.map((product) => (
-                    console.log(product),
                     <ProductCard 
                         key={product.id} 
                         product={product} 
