@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar"
 import Carousel from "../components/Carousel"
 import '../CSS/carousel.css';
+import '../CSS/Home.css';
+import Footer from "../components/Footer";
 import img1 from '../assets/home-images/1.jpg';
 import img2 from '../assets/home-images/2.jpg';
 import img3 from '../assets/home-images/3.jpg';
@@ -19,6 +21,10 @@ export default function Home(){
             <div className="carousel-contain-home">
                 <Carousel images={images} className="carousel-box" />
             </div>
+            <div className="heading-home">
+                <h1>Products From Our Store</h1>
+            </div>
+            <Footer />
         </div>
     )
 }
