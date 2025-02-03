@@ -81,14 +81,14 @@
     font-size: 1.4rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 /* Description */
 .popup-description {
     font-size: 1rem;
     color: #666;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 /* Price */
@@ -96,7 +96,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #27ae60;
-    margin-bottom: 8px;
+    margin-bottom: 28px;
 }
 
 /* Rating */
