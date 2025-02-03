@@ -42,6 +42,8 @@
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
 
 }
 
@@ -81,3 +83,7 @@
     background-color: darkblue;
 }
 
+
+.product-title:hover {
+    color: #ff5733; 
+}
