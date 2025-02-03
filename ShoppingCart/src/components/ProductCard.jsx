@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import '../CSS/product-card.css';
-
+import { useState } from "react";
+import PopUp from "./PopUp";
 export default function ProductCard({ image, title, description, price, rating }) {
+    
     return (
             <div className="products-container">
                 <div className="images-container">
@@ -16,6 +18,13 @@ export default function ProductCard({ image, title, description, price, rating }
                     <p className="product-rating">⭐ {rating.rate} ({rating.count} reviews)</p>
                     <button className="add-to-cart-button">Add to Cart</button>
                 </div>
+                <PopUp 
+                    image={image}
+                    title={title}
+                    description={description}
+                    price={price}
+                    rating={rating}
+                />
             </div>
     );
 }
