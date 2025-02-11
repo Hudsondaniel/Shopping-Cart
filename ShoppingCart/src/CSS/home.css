@@ -11,3 +11,23 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.summer-sale-container {
+    width: 100%;
+    max-width: 1000px;  
+    height: auto;      /* Set the height for the container */
+    margin: 0 auto;     /* Center the container */
+    overflow: hidden;   /* Hide any overflow (in case the image is too large) */
+    margin-bottom: 2rem;
+}
+
+.sale-image {
+    width: 100%;
+    height: 100%;
+}
+
+.sale-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image fits the container without stretching */
+}

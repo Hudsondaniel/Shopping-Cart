@@ -10,6 +10,7 @@ import img4 from '../assets/home-images/4.jpg';
 import img5 from '../assets/home-images/5.jpg';
 import img6 from '../assets/home-images/6.jpg';
 import img7 from '../assets/home-images/7.jpg';
+import summerSale from '../assets/home-images/summer-sale.jpg';
 
 
 export default function Home(){
@@ -22,7 +23,12 @@ export default function Home(){
                 <Carousel images={images} className="carousel-box" />
             </div>
             <div className="heading-home">
-                <h1>Products From Our Store</h1>
+                <h1>Summer Sale Is Here!</h1>
+            </div>
+            <div className="summer-sale-container">
+                <div className="sale-image">
+                    <img src={summerSale} alt="" />
+                </div>
             </div>
             <Footer />
         </div>
