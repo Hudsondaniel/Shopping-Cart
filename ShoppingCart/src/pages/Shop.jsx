@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 import { useEffect, useState } from "react";
 import '../CSS/shop.css';
-
+import Footer from "../components/Footer";
 
 export default function Shop(){
     const [products, setProducts] = useState([]);
@@ -34,6 +34,7 @@ export default function Shop(){
                         />
                 ))}
             </div>
+            <Footer />
         </>
     )
 }
