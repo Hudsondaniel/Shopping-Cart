@@ -23,7 +23,8 @@ export default function Shop(){
             <div className="products-outside-container">
                 {products.map((product) => (
                     <ProductCard 
-                        key={product.id} 
+                        key={product.id}
+                        id={product.id} 
                         product={product} 
                         image={product.image}
                         title={product.title}
