@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import useCartStore from "../Store/useCartStore";
+import '../CSS/cartItem.css';
 
 export default function CartItem({ item }) {
     const removeFromCart = useCartStore((state) => state.removeFromCart);
@@ -13,7 +14,9 @@ export default function CartItem({ item }) {
 
     return (
         <div className="cart-item">
-            <img src={item.image} alt={item.title} className="cart-item-image" />
+            <div className="cart-item-image">
+                <img src={item.image} alt={item.title} className="cart-item-image" />
+            </div>
             
             <div className="cart-item-details">
                 <h3 className="cart-item-title">{item.title}</h3>
