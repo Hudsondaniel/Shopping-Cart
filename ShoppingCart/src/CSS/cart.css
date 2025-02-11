@@ -7,3 +7,71 @@
     margin-right: 2rem;
     margin-bottom: 20px;
 }
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-total h3 {
+    margin: 0;
+}
+
+.cart-total span {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cart-total .currency {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.clear-checkout button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clear-checkout .clear-btn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+}
+
+.clear-checkout .checkout-btn {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+.clear-checkout button:hover {
+    transform: translateY(-4px);
+}
+
+.clear-checkout button:active {
+    transform: translateY(2px);
+}
+
+.clear-checkout .clear-btn:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+.clear-checkout .checkout-btn:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}

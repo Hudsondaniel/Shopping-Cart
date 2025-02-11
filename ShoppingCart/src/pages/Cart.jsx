@@ -26,12 +26,12 @@ export default function Cart() {
 
                         {/* Total Cart Value Container */}
                         <div className="cart-total">
-                            <h3>Total: ${calculateTotal()}</h3>
+                            <h3>Total Cart Value: ${calculateTotal()}</h3>
                         </div>
 
                         <div className="clear-checkout">
-                            <button onClick={clearCart}>Clear Cart</button>
-                            <button>Checkout</button>
+                            <button className="clear-btn" onClick={clearCart}>Clear Cart</button>
+                            <button className="checkout-btn">Checkout</button>
                         </div>
                     </div>
                 )}
