@@ -17,7 +17,7 @@ export default function Cart() {
             <Navbar />
             <div className="cart-container">
                 {cart.length === 0 ? (
-                    <p>Your Cart Is Empty!</p>
+                    <p className="empty-cart">Your Cart Is Empty!</p>
                 ) : (
                     <div>
                         {cart.map((item, index) => (

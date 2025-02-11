@@ -75,3 +75,11 @@
 .clear-checkout .checkout-btn:hover {
     background: linear-gradient(135deg, #0072ff, #00c6ff);
 }
+
+.empty-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    height: 100vh;
+}
