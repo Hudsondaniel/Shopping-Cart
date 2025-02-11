@@ -2,9 +2,23 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import "../CSS/product-card.css";
 import PopUp from "./PopUp";
+import useCartStore from "../Store/useCartStore";
 
-export default function ProductCard({ image, title, description, price, rating }) {
+export default function ProductCard({ id, image, title, description, price, rating }) {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const addToCart = useCartStore((state) => state.addToCart);
+
+    const handleAddToCart = () => {
+        addToCart({
+            id: id || Date.now(), // Ensures item has a unique ID
+            image,
+            title,
+            description,
+            price,
+            rating,
+            quantity: 1,
+        });
+    };
 
     return (
         <>
@@ -15,18 +29,18 @@ export default function ProductCard({ image, title, description, price, rating }
                     </div>
                 </div>
                 <div className="product-details-container">
-                    {/* Open popup when title is clicked */}
                     <h3 className="product-title" onClick={() => setIsPopupOpen(true)}>
                         {title.slice(0, 30)}..
                     </h3>
                     <p className="product-description">{description.slice(0, 100)}...</p>
                     <p className="product-price">${price.toFixed(2)}</p>
                     <p className="product-rating">⭐ {rating.rate} ({rating.count} reviews)</p>
-                    <button className="add-to-cart-button">Add to Cart</button>
+                    <button className="add-to-cart-button" onClick={handleAddToCart}>
+                        Add to Cart
+                    </button>
                 </div>
             </div>
 
-            {/* Show popup if isPopupOpen is true */}
             {isPopupOpen && (
                 <div className="popup-overlay" onClick={() => setIsPopupOpen(false)}>
                     <PopUp
@@ -44,6 +58,7 @@ export default function ProductCard({ image, title, description, price, rating }
 }
 
 ProductCard.propTypes = {
+    id: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
