@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import CartItem from "../components/CartItem";
 import useCartStore from "../Store/useCartStore";
+import "../CSS/cart.css";
 
 export default function Cart() {
     const cart = useCartStore((state) => state.cart);
