@@ -8,6 +8,10 @@ export default function Cart() {
     const cart = useCartStore((state) => state.cart);
     const clearCart = useCartStore((state) => state.clearCart);
 
+    const calculateTotal = () => {
+        return cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
+    };
+
     return (
         <div>
             <Navbar />
@@ -19,6 +23,12 @@ export default function Cart() {
                         {cart.map((item, index) => (
                             <CartItem key={item.id || index} item={item} />
                         ))}
+
+                        {/* Total Cart Value Container */}
+                        <div className="cart-total">
+                            <h3>Total: ${calculateTotal()}</h3>
+                        </div>
+
                         <div className="clear-checkout">
                             <button onClick={clearCart}>Clear Cart</button>
                             <button>Checkout</button>
