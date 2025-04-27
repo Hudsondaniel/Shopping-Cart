@@ -3,18 +3,18 @@ import Carousel from "../components/Carousel"
 import '../CSS/carousel.css';
 import '../CSS/Home.css';
 import Footer from "../components/Footer";
-import img1 from '../assets/home-images/1.jpg';
-import img2 from '../assets/home-images/2.jpg';
-import img3 from '../assets/home-images/3.jpg';
-import img4 from '../assets/home-images/4.jpg';
-import img5 from '../assets/home-images/5.jpg';
-import img6 from '../assets/home-images/6.jpg';
-import img7 from '../assets/home-images/7.jpg';
-import summerSale from '../assets/home-images/summer-sale.jpg';
 
 
 export default function Home(){
-    const images = [img1, img2, img3, img4, img5, img6, img7];
+    const images = [
+        '/assets/home-images/1.jpg',
+        '/assets/home-images/2.jpg',
+        '/assets/home-images/3.jpg',
+        '/assets/home-images/4.jpg',
+        '/assets/home-images/5.jpg',
+        '/assets/home-images/6.jpg',
+        '/assets/home-images/7.jpg',
+    ];
     
     return (
         <div>
@@ -27,7 +27,7 @@ export default function Home(){
             </div>
             <div className="summer-sale-container">
                 <div className="sale-image">
-                    <img src={summerSale} alt="" />
+                    <img src={'/assets/home-images/summer-sale.jpg'} alt="Summer Sale" loading="lazy" width="900" height="400" />
                 </div>
             </div>
             <Footer />
