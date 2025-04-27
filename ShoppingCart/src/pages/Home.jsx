@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import Carousel from "../components/Carousel"
 import '../CSS/carousel.css';
-import '../CSS/Home.css';
+import '../CSS/home.css';
 import Footer from "../components/Footer";
 
 
