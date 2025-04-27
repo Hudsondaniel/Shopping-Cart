@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import useCartStore from "../Store/useCartStore";
-import '../CSS/cartitem.css';
+import '../CSS/cartItem.css';
 
 export default function CartItem({ item }) {
     const removeFromCart = useCartStore((state) => state.removeFromCart);
