@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../CSS/PopUp.css";
+import "../CSS/popup.css";
 
 export default function PopUp({ image, title, description, price, rating, closePopup }) {
     return (
